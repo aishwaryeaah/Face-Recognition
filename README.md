@@ -5,4 +5,6 @@ Backend Folder contains the templates attached to APIs,pictures of the authorise
 After Running the app.ipynb file an API is generated which connected to the front home page predict button.
 
 Thhe below attached are the pictures of homepage and verifying page.
+
+<img width="960" alt="homepage" src="https://user-images.githubusercontent.com/99361405/170869365-6e6ab4a9-12e3-46ad-8b8f-431b58faf0d4.png">
 <img width="956" alt="security_checking_backend" src="https://user-images.githubusercontent.com/99361405/170869251-d02d7ec5-fbeb-4cba-90b7-1ac1bee851ba.png">
