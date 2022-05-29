@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <style>
+        body{
+	
+	background-color:  #0C090A;
+}
+.text{
+	display:contents;
+	justify-content:center;
+	align-items:center;
+}
+h1{
+	margin-left: 60px;
+	margin-right: 60px;
+	font-size: 60px;
+	font-weight: 600;
+	line-height: 1.15;
+	color: antiquewhite;
+	font-family: 'Montserrat', sans-serif;
+}
+p{
+	margin-left: 60px;
+	margin-right: 60px;
+	color: antiquewhite;
+	font-size: 14px;
+	font-weight:lighter;
+	font-family: 'Montserrat', sans-serif;
+}
+h4{
+	color: antiquewhite;
+	font-size: 14px;
+	font-weight:lighter;
+	font-family: 'Montserrat', sans-serif;
+}
+.click{
+	margin-top: 50px;
+	margin-bottom: -50px;
+	margin-left: 41%;
+}
+.container{
+	margin-top: 8%;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+button {
+	--glow-color: rgb(217, 176, 255);
+	--glow-spread-color: rgba(191, 123, 255, 0.781);
+	--enhanced-glow-color: rgb(231, 206, 255);
+	--btn-color: rgb(100, 61, 136);
+	border: .25em solid var(--glow-color);
+	padding: 1em 3em;
+	color: var(--glow-color);
+	font-size: 15px;
+	font-weight: bold;
+	background-color: var(--btn-color);
+	border-radius: 1em;
+	outline: none;
+	box-shadow: 0 0 1em .25em var(--glow-color),
+		   0 0 4em 1em var(--glow-spread-color),
+		   inset 0 0 .75em .25em var(--glow-color);
+	text-shadow: 0 0 .5em var(--glow-color);
+	position: relative;
+	transition: all 0.3s;
+   }
+   
+   button::after {
+	pointer-events: none;
+	content: "";
+	position: absolute;
+	top: 120%;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: var(--glow-spread-color);
+	filter: blur(2em);
+	opacity: .7;
+	transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+   }
+   
+   button:hover {
+	color: var(--btn-color);
+	background-color: var(--glow-color);
+	box-shadow: 0 0 1em .25em var(--glow-color),
+		   0 0 4em 2em var(--glow-spread-color),
+		   inset 0 0 .75em .25em var(--glow-color);
+   }
+   
+   button:active {
+	box-shadow: 0 0 0.6em .25em var(--glow-color),
+		   0 0 2.5em 2em var(--glow-spread-color),
+		   inset 0 0 .5em .25em var(--glow-color);
+   }
+    </style>
+</head>
+<body>
+    <div class="text">
+        <h1>Face Recognition Project For Data Security</h1>
+        <p>During the 4 weeks of the Microsoft Engage 2022 program, 
+            I got the opportunity to be mentored by the employees and leaders at Microsoft. 
+            By the end of the program, I have learned, developed, and deployed a face-recognition 
+            web application using OpenCV and face recognition. 
+            Flask, a micro web framework, has been used for creating APIs. 
+			I have already stored my face as default, so for any unknown person an alarm will ring.</p>
+    </div>
+	<div class="click">
+		<h4>Click on the 'Predict' button to verify</h4>
+	</div>
+    <div class="container">
+        <a href="http://localhost:9000/" target="_blank"><button>Predict</button></a>
+    </div>
+</body>
+</html>
+
+    
